@@ -1,0 +1,13 @@
+.contact-list-container{
+    
+    .contact-list {
+        display: grid;
+        // height: 200px;
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        border-radius: 5px;
+        padding: 10px;
+        gap: 10px;
+        list-style: none;
+        
+    }
+}

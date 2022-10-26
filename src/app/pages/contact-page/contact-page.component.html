@@ -1,0 +1,11 @@
+<section class="contact-main-container">
+    <h1>Your Contacts</h1>
+    <!-- <section *ngIf="currContactId else list">
+        <contact-details [contactId]="currContactId" (currContactId)="onSetCurrContactId($event)"></contact-details>
+    </section> -->
+    <a routerLink="/edit">Add a contact</a>
+    <contact-filter></contact-filter>
+    <contact-list (currContactId)="onSetCurrContactId($event)" [contacts]="(contacts$|async)!"></contact-list>
+</section>
+
+<router-outlet></router-outlet>

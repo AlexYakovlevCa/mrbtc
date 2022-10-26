@@ -1,0 +1,7 @@
+<section class="contact-list-container">
+    <ul class="contact-list">
+        <li *ngFor="let contact of contacts">
+            <contact-preview [contact]="contact" (currContactId)="currContactId.emit($event)"></contact-preview>
+        </li>
+    </ul>
+</section>

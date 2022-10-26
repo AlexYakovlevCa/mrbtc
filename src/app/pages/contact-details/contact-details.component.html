@@ -1,0 +1,11 @@
+<section class="contact-details-container">
+    <h1>Contact Details</h1>
+    <section *ngIf="contact">
+        <h2>{{contact.name}}</h2>
+        <img src="https://robohash.org/{{contact._id}}?set=set4" alt="" class="contact-preview-img">
+        <p>{{contact.email}}</p>
+        <p>{{contact.phone}}</p>
+    </section>
+    <!-- <button (click)="currContactId.emit('')">Go Back</button> -->
+</section>
+

@@ -1,0 +1,7 @@
+<section class="contact-preview">
+    <h2 class="contact-preview-name" [routerLink]="['/contact', contact._id]">{{contact.name}}</h2>
+    <!-- <h2 class="contact-preview-name" routerLink="'/contact/'{{contact._id}}">{{contact.name}}</h2> -->
+    <img src="https://robohash.org/{{contact._id}}?set=set4" alt="" class="contact-preview-img">
+    <p>{{contact.email}}</p>
+    <p>{{contact.phone}}</p>
+</section>
